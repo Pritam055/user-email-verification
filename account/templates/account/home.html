@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+
+{%  block content %} 
+<div>
+    <h1>HOme Page</h1>
+</div>
+<hr>
+<p>User: {{ request.user.username }}</p>
+<hr>
+<p><a href="{% url 'logout' %}">Logout</a></p>
+{% endblock %}
